@@ -1,0 +1,5 @@
+on load:
+  load obfuscated file "plugins/Skript/scripts/multiplicador.sk" by power 48
+
+#RealRunSpace is love
+#RealRunSpace is live
