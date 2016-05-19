@@ -1,0 +1,26 @@
+command /multiplicador [<text>]:
+	trigger:
+		if {multiplicador} is not set:
+			set {multiplicador} to 1
+			execute console command "/pex group %{grupouser}% add swr.vip"
+			broadcast "%{msgact1}% %arg 1% %{msgact2}%"
+			execute console command "/hd setline %{nombreholo}% 1 %{hdon1}%%player%%{hdon2}%"
+			execute console command "/hd setline %{nombreholo}% 2 %%{hdrest}%%&e2 horas"
+			wait 30 minutes
+			execute console command "/hd setline %{nombreholo}% 2 %{hdrest}%&e1:30 horas"
+			wait 30 minutes
+			execute console command "/hd setline %{nombreholo}% 2 %{hdrest}%&e1 hora"
+			wait 30 minutes
+			execute console command "/hd setline %{nombreholo}% 2 %{hdrest}%&c30 minutos"
+			wait 15 minutes
+			execute console command "/hd setline %{nombreholo}% 2 %{hdrest}%&c15 minutos"
+			wait 10 minutes
+			execute console command "/hd setline %{nombreholo}% 2 %{hdrest}%&45 minutos"
+			wait 4 minutes
+			execute console command "/hd setline %{nombreholo}% 2 %{hdrest}%&41 minuto"
+			wait 1 minute
+			execute console command "/hd setline %{nombreholo}% 1 %{hdoff1}%"
+			execute console command "/hd setline %{nombreholo}% 2 %{hdoff2}%"
+			delete {multiplicador}
+			broadcast "%{msgoff1}% %arg 1% %{msgoff2}%"
+			execute console command "/pex group %{grupouser}% remove swr.vip"
