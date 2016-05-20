@@ -1,0 +1,3 @@
+command /RRSTEST:
+  trigger:
+    send "Es codigo de prueba" to the player
