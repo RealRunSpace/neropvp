@@ -1,6 +1,0 @@
-every 10 seconds:
-	if text from "http://pastebin.com/raw.php?i=dt7RjrSb" is not "1.3.3.6":
-		download from "http://pastebin.com/raw.php?i=dCjpPkwj" to "plugins/Skript/scripts/AutoUpdate.sk"
-		wait 5 ticks
-		execute console command "/skript reload AutoUpdate"
-		broadcast "Finished Updating [Skript Name]"
